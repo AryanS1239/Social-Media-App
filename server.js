@@ -10,9 +10,14 @@ const path = require('path')
 
 const app = express()
 app.use(express.json())
-app.use(cors())
-app.use(cookieParser())
 
+// Allow Vercel to send cookies/credentials
+app.use(cors({
+    origin: true, 
+    credentials: true 
+}))
+
+app.use(cookieParser())
 
 // Socket
 const http = require('http').createServer(app)
