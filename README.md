@@ -1,27 +1,51 @@
-# MERN Stack - Build a social media app 
-> MERN Stack Build  a social media app (instagram , facebook, twitter clone) with MERN  + Redux  + Bootstrap 4
+# Social Media Platform (MERN Stack)
 
-## Author: Dev A.T Viet Nam
+A fully functional social media application built with the MERN stack (MongoDB, Express, React, Node.js). This platform allows users to share posts, interact with friends, and manage their profiles, similar to Instagram or Facebook.
 
-## Youtube tutorials: https://www.youtube.com/watch?v=DLtVKgkCKx8&list=PLs4co9a6NhMyAfSnDg1MKGwLdLx0OA07d
+## 🚀 Features
 
-## Install dependencies for server 
-### `npm install`
+- **User Authentication:** Secure Login and Registration system with JWT (JSON Web Tokens).
+- **Social Interactions:** Users can Create, Like, Comment on, and Delete posts.
+- **Follow System:** Follow and Unfollow other users to see their content in your feed.
+- **Media Support:** Image uploads supported via Cloudinary.
+- **Real-time UI:** Built with Redux for state management and Bootstrap 4 for responsive design.
+- **Profile Management:** Users can edit their personal details and profile pictures.
 
-## Install dependencies for client
-### cd client ---> `npm install`
+## 🛠️ Tech Stack
 
-## Connect to your mongodb and add info in .env
+- **Frontend:** React.js, Redux, Bootstrap 4
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Image Storage:** Cloudinary API
 
-## Run the client & server with concurrently
-### `npm run dev`
+## 🔑 Environment Variables
 
-## Run the Express server only
-### `npm run server`
+To run this project, you will need to add the following environment variables to your backend configuration (or a `.env` file locally):
 
-## Run the React client only
-### `npm run client`
+| Variable               | Description                              |
+| :--------------------- | :--------------------------------------- |
+| `MONGODB_URL`          | Connection string for MongoDB Atlas      |
+| `ACCESS_TOKEN_SECRET`  | Secret key for generating access tokens  |
+| `REFRESH_TOKEN_SECRET` | Secret key for generating refresh tokens |
+| `CLOUD_NAME`           | Your Cloudinary Cloud Name               |
+| `CLOUD_API_KEY`        | Your Cloudinary API Key                  |
+| `CLOUD_API_SECRET`     | Your Cloudinary API Secret               |
 
-### Server runs on http://localhost:5000 and client on http://localhost:3000
+## 💻 How to Run Locally
 
+1.  **Install Dependencies:**
 
+    ```bash
+    # Install backend dependencies
+    npm install
+
+    # Install frontend dependencies
+    cd client
+    npm install
+    ```
+
+2.  **Start the App:**
+    ```bash
+    # Run both client and server
+    npm run dev
+    ```
